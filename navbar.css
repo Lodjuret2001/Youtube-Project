@@ -1,0 +1,248 @@
+/* NAVBAR CSS CODE ONLY */
+
+.navbar {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(213, 213, 213);
+    z-index: 100;
+}
+
+/*---LEFT---*/
+
+.navbar-left {
+    width: 165px;
+}
+
+.navbar-left-section {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu-box {
+    width: 80px;
+    padding-left: 3px;
+}
+
+.youtube-logo-box {
+    flex: 1;
+}
+
+.hamburger-menu-icon {
+    width: 24px;
+    margin: 0px 25px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+/*---MID---*/
+
+.navbar-mid {
+    display: flex;
+    margin: 0px 30px;
+    align-items: center;
+    max-width: 400px;
+    justify-content: stretch;
+    flex: 1;
+    position: relative;
+}
+
+.yt-search-bar {
+    height: 39px;
+    border: 1 px solid grya;
+    flex: 1;
+    flex-shrink: 1;
+    width: 30px;
+    padding-left: 10px;
+    border-width: 1px;
+    border-color: rgb(213, 213, 213);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-style: solid;
+    outline: none !important;
+}
+
+.keyboard-icon {
+    position: absolute;
+    right: 115px;
+    z-index: 100;
+}
+
+.btn-search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-search {
+    padding: 5px 20px 5px 20px;
+    border-color: rgb(213, 213, 213);
+    border-width: 1px;
+    border-style: solid;
+    border-left: none;
+}
+
+
+.btn-search-icon {
+    width: 24px;
+}
+
+
+.tooltip {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: -20px;
+    padding: 2px;
+    z-index: 100;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 12px;
+    transition: opacity 0.25s;
+}
+
+.btn-search-container:hover .tooltip,
+.voice-search-container:hover .tooltip {
+    opacity: 1;
+}
+
+.voice-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.voice-search-container .tooltip {
+    white-space: nowrap;
+
+}
+
+.voice-search-icon {
+    height: 30px;
+    background-color: rgb(241, 241, 241);
+    padding: 5px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+/*---RIGHT---*/
+
+.navbar-right {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.upload-container,
+.youtube-apps-container,
+.notifications-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-container:hover .tooltip {
+    opacity: 1;
+}
+
+.youtube-apps-container .tooltip {
+    white-space: nowrap;
+}
+
+.notifications-container .notifications-counter {
+    color: white;
+    background-color: red;
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon {
+    height: 25px;
+}
+
+.youtube-profile-picture-icon {
+    height: 30px;
+    border-radius: 15px;
+}
+
+/*---SIDEBAR---*/
+
+.youtube-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    top: 55px;
+    bottom: 0px;
+    left: 0px;
+    width: 80px;
+    align-items: center;
+    z-index: 200;
+}
+
+.side-bar-icons-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    height: 450px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-bar-empty-box {
+    flex: 1;
+}
+
+.youtube-sidebar-btn {
+    border: none;
+    width: 80px;
+    height: 80px;
+    font-size: 11px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    background-color: white;
+}
+
+.youtube-sidebar-btn:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.img-icon {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 2px;
+}

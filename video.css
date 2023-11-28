@@ -1,0 +1,143 @@
+/* YOUTUBE GRID CSS */
+
+.youtube-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .youtube-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 901px) and (max-width:1299px) {
+    .youtube-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1300px) {
+    .youtube-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.yt-video-img-box {
+    position: relative;
+}
+
+.yt-video-thumbnail:hover {
+    cursor: pointer;
+}
+
+.yt-video-thumbnail {
+    width: 100%;
+    position: relative;
+}
+
+.time-stamp {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.yt-video-bottom-info {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.yt-video-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.youtube-profile-picture-container {
+    position: relative;
+}
+
+.youtube-profile-picture:hover+.youtube-profile-picture-info-container {
+    opacity: 1;
+}
+
+.youtube-profile-picture-info-container {
+    display: flex;
+    position: absolute;
+    bottom: -75px;
+    left: -10px;
+    z-index: 50;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+}
+
+@media (max-width: 500px) {
+    .youtube-profile-picture-info-container {
+        width: 170px;
+    }
+}
+
+.youtube-profile-picture-info-container img {
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.youtube-profile-picture-info-container div {
+    flex: 1;
+}
+
+.youtube-profile-picture-info-container div p {
+    padding: 0;
+}
+
+.youtube-profile-picture-info-container div p:first-child {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.youtube-profile-picture-info-container div p:nth-child(2) {
+    font-size: 14px;
+    margin-top: 3px;
+    color: rgb(102, 102, 102);
+}
+
+.youtube-profile-picture {
+    border-radius: 20px;
+    width: 40px;
+    vertical-align: top;
+
+}
+
+.yt-video-title {
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.yt-video-author {
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: #606060;
+}
+
+.yt-video-info {
+    font-size: 12px;
+    color: #606060;
+}
